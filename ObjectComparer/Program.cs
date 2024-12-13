@@ -12,7 +12,8 @@ namespace ObjectComparer
             object objA = a; // 装箱
             object objB = b; // 装箱
 
-            Console.WriteLine(objA == objB); // 输出: False
+            Console.WriteLine(a == b); // 比较值输出: true
+            Console.WriteLine(objA == objB); // 比较引用地址输出: False
 
 
 
