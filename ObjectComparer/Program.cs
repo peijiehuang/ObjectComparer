@@ -6,6 +6,16 @@ namespace ObjectComparer
     {
         static void Main(string[] args)
         {
+            short a = 1;
+            int b = 1;
+
+            object objA = a; // 装箱
+            object objB = b; // 装箱
+
+            Console.WriteLine(objA == objB); // 输出: False
+
+
+
             string str1 = "hello world"; // 字符串字面量
             string str2 = string.Concat("hello", " world"); // 动态拼接
 
